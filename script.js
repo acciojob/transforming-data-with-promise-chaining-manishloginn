@@ -1,14 +1,12 @@
-//your JS code here. If required.
-
-  const btn = document.getElementById("btn")
+ const btn = document.getElementById("btn")
 
   const output = document.getElementById("output")
 
   btn.addEventListener("click", ()=> {
-    const ip = document.getElementById("ip").value;
+    const inputNumber = document.getElementById("ip").value;
     const firstPromise = new Promise ((resolve, reject) => {
       setTimeout(()=> {
-        resolve( `Result: ${ip}`)
+        resolve(inputNumber)
       }, 2000)
     })
    
